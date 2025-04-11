@@ -1,0 +1,20 @@
+### environment files ###
+.env*
+!.env.template
+
+### log files ###
+*.log
+*.log.*
+
+### JetBrains IDEA ###
+.idea/**
+**/.idea/**
+*.iws
+*.iml
+*.ipr
+
+### VSCode ###
+.vscode/
+
+### MacOS ###
+.DS_Store
