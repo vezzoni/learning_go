@@ -9,4 +9,5 @@ func main() {
 	numbers.Example1()
 	numbers.Example2()
 	chars.Example3()
+	chars.Example4()
 }

@@ -24,13 +24,15 @@ func Example3() {
 	s = "Hello, world!"
 	fmt.Println(s)
 
-	z := "Hello, \n\t\"world\" \\"
+	z := "Hello, \n\t\"world\" with a backslash \\"
 	fmt.Println(z)
 
+	// raw string literal
 	x := `Hello, 
-	"world" \`
+	"world" with a backslash \`
 	fmt.Println(x)
 
+	// unicode characters
 	t := "👋 🌎"
 	fmt.Println(t)
 
@@ -39,16 +41,16 @@ func Example3() {
 
 	b := s[0]
 	b2 := s[4]
-	fmt.Println(s, b, string(b), b2, string(b2))
-	s2 := s[0:5]  // Hello
-	s3 := s[7:12] // world
-	s4 := s[:5]   // Hello
-	s5 := s[7:]   // world!
+	fmt.Println(s, b, string(b), b2, string(b2)) // Hello, world! 72 H 111 o
+	s2 := s[0:5]                                 // substring: Hello
+	s3 := s[7:12]                                // substring: world
+	s4 := s[:5]                                  // substring: Hello
+	s5 := s[7:]                                  // substring: world!
 	fmt.Println(s, s2, s3, s4, s5)
 	fmt.Println(s, len(s), s2, len(s2), s3, len(s3))
 
-	t1 := t[:1]
-	t2 := t[2:]
+	t1 := t[:1] // substring:
+	t2 := t[2:] // substring:
 	fmt.Println(t, len(t), t1, len(t1), t2, len(t2))
 
 	var r rune = 127757
