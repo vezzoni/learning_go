@@ -5,3 +5,4 @@
 3. variables
 4. if & for
 5. switch
+6. functions
