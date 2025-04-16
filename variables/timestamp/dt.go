@@ -16,8 +16,8 @@ func rot13(in rune) rune {
 	return in
 }
 
-func Example4() {
-	fmt.Println("Examples 4	")
+func Example5() {
+	fmt.Println("Examples 5	")
 
 	now := time.Now()
 	fmt.Println(now)

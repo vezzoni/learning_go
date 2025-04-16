@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/vezzoni/learning_go/variables/arrays"
 	"github.com/vezzoni/learning_go/variables/chars"
 	"github.com/vezzoni/learning_go/variables/numbers"
 	dt "github.com/vezzoni/learning_go/variables/timestamp"
@@ -11,5 +12,6 @@ func main() {
 	numbers.Example2()
 	chars.Example3()
 	chars.Example4()
-	dt.Example4()
+	dt.Example5()
+	arrays.Example6()
 }
